@@ -2,20 +2,19 @@ import { BigInt, Bytes } from "@graphprotocol/graph-ts";
 import { Pool, PoolPosition, User } from "../../generated/schema";
 import { BIGINT_ZERO } from "./constants";
 
-export function getOrCreatePool(pid: BigInt) {
+export function getOrCreatePool(pid: BigInt): Pool {
   let id = pid.toString();
   let pool = Pool.load(id)
   if(!pool) {
     pool = new Pool(id);
     pool.balance = BIGINT_ZERO;
-    pool.gltrHarvested =BIGINT_ZERO;
   }
 
   return pool;
 }
 
 export function getOrCreatePoolPosition(pool: Pool, user: User): PoolPosition {
-  let id = pool.id + "-" + user.id;
+  let id = pool.id + "-" + user.id.toHexString();
   let position = PoolPosition.load(id)
   if(!position) {
     position = new PoolPosition(id);
