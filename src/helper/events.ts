@@ -1,7 +1,7 @@
 import { transactions } from "@amxx/graphprotocol-utils";
 import {fetchAccount} from "@openzeppelin/subgraphs/src/fetch/account"
 import { ethereum } from "@graphprotocol/graph-ts";
-import { Deposit, Harvest, Withdraw,EmergencyWithdraw } from "../../generated/Farm/LibFarm";
+import { Deposit, Harvest, Withdraw,EmergencyWithdraw } from "../../generated/GLTRFarm/GLTRFarm";
 import { EmergencyWithdraw as EmergencyWithdrawEntity, Deposit as DepositEntity, Withdraw as WithdrawEntity, Harvest as HarvestEntity } from "../../generated/schema";
 
 export function createDepositEvent(event: Deposit): DepositEntity {

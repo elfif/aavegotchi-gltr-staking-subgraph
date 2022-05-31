@@ -1,5 +1,4 @@
-import { Deposit, EmergencyWithdraw, Harvest, Withdraw } from "../generated/Farm/LibFarm";
-import {Deposit as DepositEntity, Transaction as TransactionEntity} from "../generated/schema";
+import { Deposit, EmergencyWithdraw, Harvest, Withdraw } from "../generated/GLTRFarm/GLTRFarm";
 import { getOrCreatePool, getOrCreatePoolPosition, getOrCreateUser, updatePool, updatePoolPosition } from "./helper/entities";
 import { createDepositEvent, createEmergencyWithdrawEvent, createHarvestEvent, createWithdrawEvent } from "./helper/events";
 
