@@ -2,204 +2,204 @@ specVersion: 0.0.4
 schema:
   file: schema.graphql
 dataSources:
-  # - kind: ethereum/contract
-  #   name: erc20
-  #   network: matic
-  #   source:
-  #     address: "0x73958d46B7aA2bc94926d8a215Fa560A5CdCA3eA"
-  #     abi: IERC20
-  #     startBlock: 28506860 #27899524
-  #   mapping:
-  #     kind: ethereum/events
-  #     apiVersion: 0.0.5
-  #     language: wasm/assemblyscript
-  #     entities:
-  #       - ERC20Contract
-  #     abis:
-  #       - name: IERC20
-  #         file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
-  #     eventHandlers:
-  #       - event: Approval(indexed address,indexed address,uint256)
-  #         handler: handleApproval
-  #       - event: Transfer(indexed address,indexed address,uint256)
-  #         handler: handleTransfer
-  #     file: ./node_modules/@openzeppelin/subgraphs/src/datasources/erc20.ts
-  # - kind: ethereum/contract
-  #   name: erc20-1
-  #   network: matic
-  #   source:
-  #     address: "0xfEC232CC6F0F3aEb2f81B2787A9bc9F6fc72EA5C"
-  #     abi: IERC20
-  #     startBlock: 28506860 #26577792
-  #   mapping:
-  #     kind: ethereum/events
-  #     apiVersion: 0.0.5
-  #     language: wasm/assemblyscript
-  #     entities:
-  #       - ERC20Contract
-  #     abis:
-  #       - name: IERC20
-  #         file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
-  #     eventHandlers:
-  #       - event: Approval(indexed address,indexed address,uint256)
-  #         handler: handleApproval
-  #       - event: Transfer(indexed address,indexed address,uint256)
-  #         handler: handleTransfer
-  #     file: ./node_modules/@openzeppelin/subgraphs/src/datasources/erc20.ts
-  # - kind: ethereum/contract
-  #   name: erc20-2
-  #   network: matic
-  #   source:
-  #     address: "0x641CA8d96b01Db1E14a5fBa16bc1e5e508A45f2B"
-  #     abi: IERC20
-  #     startBlock: 28506860 #26577814
-  #   mapping:
-  #     kind: ethereum/events
-  #     apiVersion: 0.0.5
-  #     language: wasm/assemblyscript
-  #     entities:
-  #       - ERC20Contract
-  #     abis:
-  #       - name: IERC20
-  #         file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
-  #     eventHandlers:
-  #       - event: Approval(indexed address,indexed address,uint256)
-  #         handler: handleApproval
-  #       - event: Transfer(indexed address,indexed address,uint256)
-  #         handler: handleTransfer
-  #     file: ./node_modules/@openzeppelin/subgraphs/src/datasources/erc20.ts
-  # - kind: ethereum/contract
-  #   name: erc20-3
-  #   network: matic
-  #   source:
-  #     address: "0xC765ECA0Ad3fd27779d36d18E32552Bd7e26Fd7b"
-  #     abi: IERC20
-  #     startBlock: 28506860 #26577832
-  #   mapping:
-  #     kind: ethereum/events
-  #     apiVersion: 0.0.5
-  #     language: wasm/assemblyscript
-  #     entities:
-  #       - ERC20Contract
-  #     abis:
-  #       - name: IERC20
-  #         file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
-  #     eventHandlers:
-  #       - event: Approval(indexed address,indexed address,uint256)
-  #         handler: handleApproval
-  #       - event: Transfer(indexed address,indexed address,uint256)
-  #         handler: handleTransfer
-  #     file: ./node_modules/@openzeppelin/subgraphs/src/datasources/erc20.ts
-  # - kind: ethereum/contract
-  #   name: erc20-4
-  #   network: matic
-  #   source:
-  #     address: "0xBFad162775EBfB9988db3F24ef28CA6Bc2fB92f0"
-  #     abi: IERC20
-  #     startBlock: 28506860 #26577847
-  #   mapping:
-  #     kind: ethereum/events
-  #     apiVersion: 0.0.5
-  #     language: wasm/assemblyscript
-  #     entities:
-  #       - ERC20Contract
-  #     abis:
-  #       - name: IERC20
-  #         file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
-  #     eventHandlers:
-  #       - event: Approval(indexed address,indexed address,uint256)
-  #         handler: handleApproval
-  #       - event: Transfer(indexed address,indexed address,uint256)
-  #         handler: handleTransfer
-  #     file: ./node_modules/@openzeppelin/subgraphs/src/datasources/erc20.ts
-  # - kind: ethereum/contract
-  #   name: erc20-5
-  #   network: matic
-  #   source:
-  #     address: "0x096C5CCb33cFc5732Bcd1f3195C13dBeFC4c82f4"
-  #     abi: IERC20
-  #     startBlock: 28506860 # 9390937
-  #   mapping:
-  #     kind: ethereum/events
-  #     apiVersion: 0.0.5
-  #     language: wasm/assemblyscript
-  #     entities:
-  #       - ERC20Contract
-  #     abis:
-  #       - name: IERC20
-  #         file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
-  #     eventHandlers:
-  #       - event: Approval(indexed address,indexed address,uint256)
-  #         handler: handleApproval
-  #       - event: Transfer(indexed address,indexed address,uint256)
-  #         handler: handleTransfer
-  #     file: ./node_modules/@openzeppelin/subgraphs/src/datasources/erc20.ts
-  # - kind: ethereum/contract
-  #   name: erc20-6
-  #   network: matic
-  #   source:
-  #     address: "0xf69e93771F11AECd8E554aA165C3Fe7fd811530c"
-  #     abi: IERC20
-  #     startBlock: 28506860 #11586176
-  #   mapping:
-  #     kind: ethereum/events
-  #     apiVersion: 0.0.5
-  #     language: wasm/assemblyscript
-  #     entities:
-  #       - ERC20Contract
-  #     abis:
-  #       - name: IERC20
-  #         file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
-  #     eventHandlers:
-  #       - event: Approval(indexed address,indexed address,uint256)
-  #         handler: handleApproval
-  #       - event: Transfer(indexed address,indexed address,uint256)
-  #         handler: handleTransfer
-  #     file: ./node_modules/@openzeppelin/subgraphs/src/datasources/erc20.ts
-  # - kind: ethereum/contract
-  #   name: erc20-7
-  #   network: matic
-  #   source:
-  #     address: "0xb0E35478a389dD20050D66a67FB761678af99678"
-  #     abi: IERC20
-  #     startBlock: 28506860
-  #   mapping:
-  #     kind: ethereum/events
-  #     apiVersion: 0.0.5
-  #     language: wasm/assemblyscript
-  #     entities:
-  #       - ERC20Contract
-  #     abis:
-  #       - name: IERC20
-  #         file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
-  #     eventHandlers:
-  #       - event: Approval(indexed address,indexed address,uint256)
-  #         handler: handleApproval
-  #       - event: Transfer(indexed address,indexed address,uint256)
-  #         handler: handleTransfer
-  #     file: ./node_modules/@openzeppelin/subgraphs/src/datasources/erc20.ts
-  # - kind: ethereum/contract
-  #   name: erc20-8
-  #   network: matic
-  #   source:
-  #     address: "0x3801c3b3b5c98f88a9c9005966aa96aa440b9afc"
-  #     abi: IERC20
-  #     startBlock: 28455417
-  #   mapping:
-  #     kind: ethereum/events
-  #     apiVersion: 0.0.5
-  #     language: wasm/assemblyscript
-  #     entities:
-  #       - ERC20Contract
-  #     abis:
-  #       - name: IERC20
-  #         file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
-  #     eventHandlers:
-  #       - event: Approval(indexed address,indexed address,uint256)
-  #         handler: handleApproval
-  #       - event: Transfer(indexed address,indexed address,uint256)
-  #         handler: handleTransfer
-  #     file: ./node_modules/@openzeppelin/subgraphs/src/datasources/erc20.ts
+  - kind: ethereum/contract
+    name: erc20
+    network: matic
+    source:
+      address: "0x73958d46B7aA2bc94926d8a215Fa560A5CdCA3eA"
+      abi: IERC20
+      startBlock: 27899524
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      entities:
+        - ERC20Contract
+      abis:
+        - name: IERC20
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+      eventHandlers:
+        - event: Approval(indexed address,indexed address,uint256)
+          handler: handleApproval
+        - event: Transfer(indexed address,indexed address,uint256)
+          handler: handleTransfer
+      file: ./node_modules/@openzeppelin/subgraphs/src/datasources/erc20.ts
+  - kind: ethereum/contract
+    name: erc20-1
+    network: matic
+    source:
+      address: "0xfEC232CC6F0F3aEb2f81B2787A9bc9F6fc72EA5C"
+      abi: IERC20
+      startBlock: 26577792
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      entities:
+        - ERC20Contract
+      abis:
+        - name: IERC20
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+      eventHandlers:
+        - event: Approval(indexed address,indexed address,uint256)
+          handler: handleApproval
+        - event: Transfer(indexed address,indexed address,uint256)
+          handler: handleTransfer
+      file: ./node_modules/@openzeppelin/subgraphs/src/datasources/erc20.ts
+  - kind: ethereum/contract
+    name: erc20-2
+    network: matic
+    source:
+      address: "0x641CA8d96b01Db1E14a5fBa16bc1e5e508A45f2B"
+      abi: IERC20
+      startBlock: 26577814
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      entities:
+        - ERC20Contract
+      abis:
+        - name: IERC20
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+      eventHandlers:
+        - event: Approval(indexed address,indexed address,uint256)
+          handler: handleApproval
+        - event: Transfer(indexed address,indexed address,uint256)
+          handler: handleTransfer
+      file: ./node_modules/@openzeppelin/subgraphs/src/datasources/erc20.ts
+  - kind: ethereum/contract
+    name: erc20-3
+    network: matic
+    source:
+      address: "0xC765ECA0Ad3fd27779d36d18E32552Bd7e26Fd7b"
+      abi: IERC20
+      startBlock: 26577832
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      entities:
+        - ERC20Contract
+      abis:
+        - name: IERC20
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+      eventHandlers:
+        - event: Approval(indexed address,indexed address,uint256)
+          handler: handleApproval
+        - event: Transfer(indexed address,indexed address,uint256)
+          handler: handleTransfer
+      file: ./node_modules/@openzeppelin/subgraphs/src/datasources/erc20.ts
+  - kind: ethereum/contract
+    name: erc20-4
+    network: matic
+    source:
+      address: "0xBFad162775EBfB9988db3F24ef28CA6Bc2fB92f0"
+      abi: IERC20
+      startBlock: 26577847
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      entities:
+        - ERC20Contract
+      abis:
+        - name: IERC20
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+      eventHandlers:
+        - event: Approval(indexed address,indexed address,uint256)
+          handler: handleApproval
+        - event: Transfer(indexed address,indexed address,uint256)
+          handler: handleTransfer
+      file: ./node_modules/@openzeppelin/subgraphs/src/datasources/erc20.ts
+  - kind: ethereum/contract
+    name: erc20-5
+    network: matic
+    source:
+      address: "0x096C5CCb33cFc5732Bcd1f3195C13dBeFC4c82f4"
+      abi: IERC20
+      startBlock: 9390937
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      entities:
+        - ERC20Contract
+      abis:
+        - name: IERC20
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+      eventHandlers:
+        - event: Approval(indexed address,indexed address,uint256)
+          handler: handleApproval
+        - event: Transfer(indexed address,indexed address,uint256)
+          handler: handleTransfer
+      file: ./node_modules/@openzeppelin/subgraphs/src/datasources/erc20.ts
+  - kind: ethereum/contract
+    name: erc20-6
+    network: matic
+    source:
+      address: "0xf69e93771F11AECd8E554aA165C3Fe7fd811530c"
+      abi: IERC20
+      startBlock: 11586176
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      entities:
+        - ERC20Contract
+      abis:
+        - name: IERC20
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+      eventHandlers:
+        - event: Approval(indexed address,indexed address,uint256)
+          handler: handleApproval
+        - event: Transfer(indexed address,indexed address,uint256)
+          handler: handleTransfer
+      file: ./node_modules/@openzeppelin/subgraphs/src/datasources/erc20.ts
+  - kind: ethereum/contract
+    name: erc20-7
+    network: matic
+    source:
+      address: "0xb0E35478a389dD20050D66a67FB761678af99678"
+      abi: IERC20
+      startBlock: 28506860
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      entities:
+        - ERC20Contract
+      abis:
+        - name: IERC20
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+      eventHandlers:
+        - event: Approval(indexed address,indexed address,uint256)
+          handler: handleApproval
+        - event: Transfer(indexed address,indexed address,uint256)
+          handler: handleTransfer
+      file: ./node_modules/@openzeppelin/subgraphs/src/datasources/erc20.ts
+  - kind: ethereum/contract
+    name: erc20-8
+    network: matic
+    source:
+      address: "0x3801c3b3b5c98f88a9c9005966aa96aa440b9afc"
+      abi: IERC20
+      startBlock: 28455417
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      entities:
+        - ERC20Contract
+      abis:
+        - name: IERC20
+          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+      eventHandlers:
+        - event: Approval(indexed address,indexed address,uint256)
+          handler: handleApproval
+        - event: Transfer(indexed address,indexed address,uint256)
+          handler: handleTransfer
+      file: ./node_modules/@openzeppelin/subgraphs/src/datasources/erc20.ts
 
   - kind: ethereum/contract
     name: GLTRFarm
@@ -213,7 +213,10 @@ dataSources:
       apiVersion: 0.0.5
       language: wasm/assemblyscript
       entities:
-        - ERC20Contract
+        - EmergencyWithdrawEvent
+        - HarvestEvent
+        - WithdrawEvent
+        - DepositEvent
       abis:
         - name: GLTRFarm
           file: ./abis/LibFarm.json

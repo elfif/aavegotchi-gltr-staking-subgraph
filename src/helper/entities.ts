@@ -32,6 +32,7 @@ export function getOrCreateUser(address: Bytes): User {
   if(!user) {
     user = new User(address);
     user.gltrHarvested = BIGINT_ZERO;
+    user.save();
   }
 
   return user;

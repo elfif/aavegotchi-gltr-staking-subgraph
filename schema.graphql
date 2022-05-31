@@ -7,7 +7,6 @@ type Account @entity {
   ERC20transferFromEvent: [ERC20Transfer!]! @derivedFrom(field: "from")
   ERC20transferToEvent: [ERC20Transfer!]! @derivedFrom(field: "to")
   events: [Event!]! @derivedFrom(field: "emitter")
-  deposits: [Deposit!]! @derivedFrom(field: "from")
 }
 type ERC20Contract @entity(immutable: true) {
   id: Bytes!
@@ -56,8 +55,8 @@ type Deposit implements Event @entity(immutable: true) {
   transaction: Transaction!
   emitter: Account!
   timestamp: BigInt!
-  from: Account!
-  to: ERC20Contract
+  from: User!
+  to: Pool!
   amount: BigInt!
 }
 
@@ -66,8 +65,8 @@ type Withdraw implements Event @entity(immutable: true) {
   transaction: Transaction!
   emitter: Account!
   timestamp: BigInt!
-  from: ERC20Contract!
-  to: Account!
+  from: Pool!
+  to: User!
   amount: BigInt!
 }
 
@@ -95,8 +94,9 @@ type EmergencyWithdraw implements Event @entity(immutable: true) {
   transaction: Transaction!
   emitter: Account!
   timestamp: BigInt!
-  from: ERC20Contract!
-  to: Account!
+
+  from: Pool!
+  to: User!
   amount: BigInt!
 }
 
@@ -105,8 +105,7 @@ type Harvest implements Event @entity(immutable: true) {
   transaction: Transaction!
   emitter: Account!
   timestamp: BigInt!
-  from: ERC20Contract!
-  to: Account!
+  to: User!
   amount: BigInt!
 }
 
