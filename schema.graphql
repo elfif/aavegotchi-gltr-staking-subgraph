@@ -73,7 +73,7 @@ type Withdraw implements Event @entity(immutable: true) {
 type Pool @entity {
   id: ID!
   balance: BigInt!
-  positions: PoolPosition!
+  positions: [PoolPosition!]! @derivedFrom(field: "pool")
 }
 
 type PoolPosition @entity {
