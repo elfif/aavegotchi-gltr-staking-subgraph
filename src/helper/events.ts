@@ -5,7 +5,7 @@ import { Deposit, Harvest, Withdraw,EmergencyWithdraw } from "../../generated/GL
 import { EmergencyWithdraw as EmergencyWithdrawEntity, Deposit as DepositEntity, Withdraw as WithdrawEntity, Harvest as HarvestEntity } from "../../generated/schema";
 
 export function createDepositEvent(event: Deposit): DepositEntity {
-    let id = event.transaction.hash.toHexString();
+    let id = "deposit-"+event.transaction.hash.toHexString();
     let entity = new DepositEntity(id);
     entity.amount = event.params.amount;
     entity.emitter = fetchAccount(event.transaction.from).id;
@@ -16,7 +16,7 @@ export function createDepositEvent(event: Deposit): DepositEntity {
 }
 
 export function createWithdrawEvent(event: Withdraw): WithdrawEntity {
-    let id = event.transaction.hash.toHexString();
+    let id = "withdraw-"+event.transaction.hash.toHexString();
     let entity = new WithdrawEntity(id);
     entity.amount = event.params.amount;
     entity.emitter = fetchAccount(event.transaction.from).id;
@@ -27,7 +27,7 @@ export function createWithdrawEvent(event: Withdraw): WithdrawEntity {
 }
 
 export function createHarvestEvent(event: Harvest): HarvestEntity {
-    let id = event.transaction.hash.toHexString();
+    let id = "harvest-"+event.transaction.hash.toHexString();
     let entity = new HarvestEntity(id)
     entity.amount = event.params.amount;
     entity.emitter = fetchAccount(event.transaction.from).id;
@@ -38,7 +38,7 @@ export function createHarvestEvent(event: Harvest): HarvestEntity {
 }
 
 export function createEmergencyWithdrawEvent(event: EmergencyWithdraw): EmergencyWithdrawEntity {
-    let id = event.transaction.hash.toHexString();
+    let id = "ewithdraw-"+event.transaction.hash.toHexString();
     let entity = new EmergencyWithdrawEntity(id);
     entity.amount = event.params.amount;
     entity.emitter = fetchAccount(event.transaction.from).id;
