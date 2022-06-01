@@ -179,7 +179,7 @@ dataSources:
           handler: handleTransfer
       file: ./node_modules/@openzeppelin/subgraphs/src/datasources/erc20.ts
   - kind: ethereum/contract
-    name: erc20-8
+    name: GLTR
     network: matic
     source:
       address: "0x3801c3b3b5c98f88a9c9005966aa96aa440b9afc"
@@ -200,14 +200,13 @@ dataSources:
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
       file: ./node_modules/@openzeppelin/subgraphs/src/datasources/erc20.ts
-
   - kind: ethereum/contract
     name: GLTRFarm
     network: matic
     source:
-      address: "0x3801c3b3b5c98f88a9c9005966aa96aa440b9afc"
+      address: "0x1fe64677ab1397e20a1211afae2758570fea1b8c"
       abi: GLTRFarm
-      startBlock: 28455417
+      startBlock: 28455425
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.5
