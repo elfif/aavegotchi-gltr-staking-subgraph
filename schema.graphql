@@ -126,15 +126,9 @@ type Transaction @entity(immutable: true) {
 
 type PoolStat @entity {
   id: ID!
-  currentPositions: BigInt!
-  totalPositions: BigInt!
-  overallStats: Stat!
+  numberOfCurrentPositions: BigInt!
+  numberOfTotalPositions: BigInt!
+  listOfCurrentPositions: [String!]!
+  listOfTotalPositions: [String!]!
   pool: Pool!
-}
-
-type Stat @entity {
-  id: ID!
-  currentStakers: BigInt!
-  totalStakers: BigInt!
-  poolStats: [PoolStat!]! @derivedFrom(field: "overallStats")
 }
