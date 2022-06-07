@@ -74,6 +74,7 @@ type Pool @entity {
   id: ID!
   balance: BigInt!
   positions: [PoolPosition!]! @derivedFrom(field: "pool")
+  stats: PoolStat @derivedFrom(field: "pool")
 }
 
 type PoolPosition @entity {
@@ -121,4 +122,19 @@ type Transaction @entity(immutable: true) {
   timestamp: BigInt!
   blockNumber: BigInt!
   events: [Event!]! @derivedFrom(field: "transaction")
+}
+
+type PoolStat @entity {
+  id: ID!
+  currentPositions: BigInt!
+  totalPositions: BigInt!
+  overallStats: Stat!
+  pool: Pool!
+}
+
+type Stat @entity {
+  id: ID!
+  currentStakers: BigInt!
+  totalStakers: BigInt!
+  poolStats: [PoolStat!]! @derivedFrom(field: "overallStats")
 }
