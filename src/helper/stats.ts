@@ -17,6 +17,10 @@ export function getOrCreatePoolStats(pool: Pool): PoolStat {
     stats.listOfTotalPositions = new Array<string>();
     stats.pool = pool.id
   }
+
+  if(!stats.lpStaked) {
+    stats.lpStaked = BIGINT_ZERO;
+  }
   return stats;
 }
 

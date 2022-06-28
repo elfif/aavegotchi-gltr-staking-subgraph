@@ -130,5 +130,6 @@ type PoolStat @entity {
   numberOfTotalPositions: BigInt!
   listOfCurrentPositions: [String!]!
   listOfTotalPositions: [String!]!
+  lpStaked: BigInt
   pool: Pool!
 }

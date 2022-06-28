@@ -21,6 +21,7 @@ export function handleDeposit(event: Deposit): void {
   // stats
   let poolStats = getOrCreatePoolStats(pool);
   poolStats = updatePoolStats(poolStats, poolPosition)
+  poolStats.lpStaked = poolStats.lpStaked!.plus(event.params.amount);
   poolStats.save();  
 
   pool.save();
@@ -45,7 +46,8 @@ export function handleWithdraw(event: Withdraw): void {
 
   // stats
   let poolStats = getOrCreatePoolStats(pool);
-  poolStats = updatePoolStats(poolStats, poolPosition)
+  poolStats = updatePoolStats(poolStats, poolPosition);
+  poolStats.lpStaked = poolStats.lpStaked!.minus(event.params.amount);
   poolStats.save();  
   
   eventEntity.save();
