@@ -4,11 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "create-local": "graph create --node http://localhost:8020/ aavegotchi/aavegotchi-gltr-staking",
+    "remove-local": "graph remove --node http://localhost:8020/ aavegotchi/aavegotchi-gltr-staking",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 aavegotchi/aavegotchi-gltr-staking",
     "codegen": "graph codegen",
     "build": "graph build"
   },
   "keywords": [],
-  "author": "",
+  "author": "Frank Pfeift <frank.pfeift@protonmail.com>",
   "license": "ISC",
   "dependencies": {
     "@graphprotocol/graph-cli": "0.30.2",
