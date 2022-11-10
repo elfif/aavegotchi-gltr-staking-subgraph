@@ -3,7 +3,7 @@ This subgraph provides all the information you need for the glitter staking cont
 
 Watch out! The subgraph is a WIP and things might change over time. Please follow the #subgraphs channel at the [Aavegotchi Discord](https://api.thegraph.com/subgraphs/name/aavegotchi/aavegotchi-gltr-staking) if you integrate the subgraph into your dapp.
 
-The endpoint is available here: https://api.thegraph.com/subgraphs/name/aavegotchi/gotchiverse-matic. 
+The endpoint is available here: https://api.thegraph.com/subgraphs/name/aavegotchi/aavegotchi-gltr-staking. 
 
 The Playground where you can try out queries can be found here: https://thegraph.com/hosted-service/subgraph/aavegotchi/aavegotchi-gltr-staking.
 
@@ -110,4 +110,4 @@ Finally we store some stats about the pools. For example how many positions exis
 
 ## Contribute
 
-If you find bugs or have feature requests please create an issue in the [github repository](https://github.com/aavegotchi/aavegotchi-gltr-staking-subgraph/issues). If you want to hack something please just talk to us at the [Aavegotchi Discord](https://github.com/aavegotchi/aavegotchi-matic-subgraph).
+If you find bugs or have feature requests please create an issue in the [github repository](https://github.com/aavegotchi/aavegotchi-gltr-staking-subgraph/issues). If you want to hack something please just talk to us at the [Aavegotchi Discord](https://discord.gg/aavegotchi).
